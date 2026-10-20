@@ -1,0 +1,8 @@
+Integer adder 1 3 1
+FP adder 1 3 1
+ROB entries = 2
+R1=2
+Addi R2, R1, 1
+Addi R3, R2, 1
+Addi R4, R3, 1
+Addi R5, R4, 1
