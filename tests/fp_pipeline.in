@@ -1,0 +1,9 @@
+FP adder 12 3 2
+FP multiplier 8 5 2
+F1=2, F2=3
+Add.d F3, F1, F2
+Add.d F4, F1, F2
+Add.d F5, F1, F2
+Add.d F6, F1, F2
+Mult.d F7, F3, F4
+Mult.d F8, F5, F6

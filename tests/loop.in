@@ -1,0 +1,6 @@
+Integer adder 8 1 1
+R1=4
+Addi R2, R2, 3
+Addi R1, R1, -1
+Bne R1, R0, -3
+Add R3, R2, R0

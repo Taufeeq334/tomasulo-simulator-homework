@@ -1,0 +1,11 @@
+Integer adder 4 1 1
+FP multiplier 4 10 1
+Load/store unit 8 1 4 1
+R1=4
+F1=3, F2=2
+Mult.d F7, F1, F2
+Sd F7, 0(R1)
+Ld F3, 0(R1)
+Sd F3, 4(R1)
+Ld F4, 4(R1)
+Add.d F5, F3, F4

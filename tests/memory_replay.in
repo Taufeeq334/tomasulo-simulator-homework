@@ -1,0 +1,7 @@
+Integer adder 8 6 1
+Load/store unit 8 1 2 1
+F1=7
+Addi R1, R0, 4
+Sd F1, 0(R1)
+Ld F2, 4(R0)
+Add.d F3, F2, F1

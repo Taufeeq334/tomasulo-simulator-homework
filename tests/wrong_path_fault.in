@@ -1,0 +1,6 @@
+Integer adder 8 8 1
+Load/store unit 8 1 1 1
+Beq R0, R0, 2
+Ld F1, 300(R0)
+Sd F1, 304(R0)
+Addi R1, R0, 9

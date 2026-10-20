@@ -60,6 +60,13 @@ def verify_schedule(sim):
 
 
 def main():
+    expected={'arithmetic','branch_recovery','fp_pipeline','kernel','loop',
+              'memory_forward','memory_replay','parallel','pressure','renaming',
+              'starter_legacy','wrong_path_fault'}
+    missing=sorted(name+'.in' for name in expected if not (root/'tests'/(name+'.in')).is_file())
+    if missing:
+        raise SystemExit('Missing test inputs in tests/: '+', '.join(missing)+
+                         '\nUpload the complete tests folder from the submission package and retry.')
     out=root/'results';out.mkdir(exist_ok=True);rows=[]
     for path in sorted((root/'tests').glob('*.in')):
         hw,regs,mem,prog=read_program(path);expected=reference(hw,regs,mem,prog)

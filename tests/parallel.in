@@ -1,0 +1,10 @@
+Integer adder 12 1 4
+ROB entries = 32
+Addi R1, R0, 1
+Addi R2, R0, 2
+Addi R3, R0, 3
+Addi R4, R0, 4
+Addi R5, R0, 5
+Addi R6, R0, 6
+Addi R7, R0, 7
+Addi R8, R0, 8
