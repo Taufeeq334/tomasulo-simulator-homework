@@ -1,0 +1,236 @@
+{
+  "cycles": 18,
+  "hardware": {
+    "rs": {
+      "integer": 1,
+      "fp_add": 1,
+      "fp_mul": 2,
+      "ls": 5
+    },
+    "latency": {
+      "integer": 3,
+      "fp_add": 3,
+      "fp_mul": 15,
+      "ls": 1
+    },
+    "units": {
+      "integer": 1,
+      "fp_add": 1,
+      "fp_mul": 1,
+      "ls": 1
+    },
+    "branch_offsets": "words",
+    "memory_cycles": 5,
+    "rob_entries": 2,
+    "issue_width": 4,
+    "writeback_width": 1,
+    "commit_width": 4
+  },
+  "registers": {
+    "R0": 0,
+    "R1": 2,
+    "R2": 3,
+    "R3": 4,
+    "R4": 5,
+    "R5": 6,
+    "R6": 0,
+    "R7": 0,
+    "R8": 0,
+    "R9": 0,
+    "R10": 0,
+    "R11": 0,
+    "R12": 0,
+    "R13": 0,
+    "R14": 0,
+    "R15": 0,
+    "R16": 0,
+    "R17": 0,
+    "R18": 0,
+    "R19": 0,
+    "R20": 0,
+    "R21": 0,
+    "R22": 0,
+    "R23": 0,
+    "R24": 0,
+    "R25": 0,
+    "R26": 0,
+    "R27": 0,
+    "R28": 0,
+    "R29": 0,
+    "R30": 0,
+    "R31": 0,
+    "F0": 0,
+    "F1": 0,
+    "F2": 0,
+    "F3": 0,
+    "F4": 0,
+    "F5": 0,
+    "F6": 0,
+    "F7": 0,
+    "F8": 0,
+    "F9": 0,
+    "F10": 0,
+    "F11": 0,
+    "F12": 0,
+    "F13": 0,
+    "F14": 0,
+    "F15": 0,
+    "F16": 0,
+    "F17": 0,
+    "F18": 0,
+    "F19": 0,
+    "F20": 0,
+    "F21": 0,
+    "F22": 0,
+    "F23": 0,
+    "F24": 0,
+    "F25": 0,
+    "F26": 0,
+    "F27": 0,
+    "F28": 0,
+    "F29": 0,
+    "F30": 0,
+    "F31": 0
+  },
+  "memory": {},
+  "mispredictions": 0,
+  "memory_replays": 0,
+  "records": [
+    {
+      "tag": 1,
+      "pc": 0,
+      "ins": {
+        "text": "Addi R2, R1, 1",
+        "op": "addi",
+        "dest": "R2",
+        "sources": [
+          "R1"
+        ],
+        "immediate": 1,
+        "kind": "integer"
+      },
+      "operands": [
+        [
+          null,
+          2
+        ]
+      ],
+      "issue": 1,
+      "ex": [
+        2,
+        4
+      ],
+      "mem": [],
+      "wb": 5,
+      "commit": 6,
+      "squashed": false,
+      "ready": true,
+      "result": 3,
+      "address": null,
+      "finish": 4,
+      "predicted": null
+    },
+    {
+      "tag": 2,
+      "pc": 1,
+      "ins": {
+        "text": "Addi R3, R2, 1",
+        "op": "addi",
+        "dest": "R3",
+        "sources": [
+          "R2"
+        ],
+        "immediate": 1,
+        "kind": "integer"
+      },
+      "operands": [
+        [
+          null,
+          3
+        ]
+      ],
+      "issue": 5,
+      "ex": [
+        6,
+        8
+      ],
+      "mem": [],
+      "wb": 9,
+      "commit": 10,
+      "squashed": false,
+      "ready": true,
+      "result": 4,
+      "address": null,
+      "finish": 8,
+      "predicted": null
+    },
+    {
+      "tag": 3,
+      "pc": 2,
+      "ins": {
+        "text": "Addi R4, R3, 1",
+        "op": "addi",
+        "dest": "R4",
+        "sources": [
+          "R3"
+        ],
+        "immediate": 1,
+        "kind": "integer"
+      },
+      "operands": [
+        [
+          null,
+          4
+        ]
+      ],
+      "issue": 9,
+      "ex": [
+        10,
+        12
+      ],
+      "mem": [],
+      "wb": 13,
+      "commit": 14,
+      "squashed": false,
+      "ready": true,
+      "result": 5,
+      "address": null,
+      "finish": 12,
+      "predicted": null
+    },
+    {
+      "tag": 4,
+      "pc": 3,
+      "ins": {
+        "text": "Addi R5, R4, 1",
+        "op": "addi",
+        "dest": "R5",
+        "sources": [
+          "R4"
+        ],
+        "immediate": 1,
+        "kind": "integer"
+      },
+      "operands": [
+        [
+          null,
+          5
+        ]
+      ],
+      "issue": 13,
+      "ex": [
+        14,
+        16
+      ],
+      "mem": [],
+      "wb": 17,
+      "commit": 18,
+      "squashed": false,
+      "ready": true,
+      "result": 6,
+      "address": null,
+      "finish": 16,
+      "predicted": null
+    }
+  ]
+}

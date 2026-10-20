@@ -1,0 +1,334 @@
+{
+  "cycles": 14,
+  "hardware": {
+    "rs": {
+      "integer": 4,
+      "fp_add": 12,
+      "fp_mul": 8,
+      "ls": 5
+    },
+    "latency": {
+      "integer": 1,
+      "fp_add": 3,
+      "fp_mul": 5,
+      "ls": 1
+    },
+    "units": {
+      "integer": 1,
+      "fp_add": 2,
+      "fp_mul": 2,
+      "ls": 1
+    },
+    "branch_offsets": "words",
+    "memory_cycles": 5,
+    "rob_entries": 64,
+    "issue_width": 1,
+    "writeback_width": 1,
+    "commit_width": 1
+  },
+  "registers": {
+    "R0": 0,
+    "R1": 0,
+    "R2": 0,
+    "R3": 0,
+    "R4": 0,
+    "R5": 0,
+    "R6": 0,
+    "R7": 0,
+    "R8": 0,
+    "R9": 0,
+    "R10": 0,
+    "R11": 0,
+    "R12": 0,
+    "R13": 0,
+    "R14": 0,
+    "R15": 0,
+    "R16": 0,
+    "R17": 0,
+    "R18": 0,
+    "R19": 0,
+    "R20": 0,
+    "R21": 0,
+    "R22": 0,
+    "R23": 0,
+    "R24": 0,
+    "R25": 0,
+    "R26": 0,
+    "R27": 0,
+    "R28": 0,
+    "R29": 0,
+    "R30": 0,
+    "R31": 0,
+    "F0": 0,
+    "F1": 2,
+    "F2": 3,
+    "F3": 5,
+    "F4": 5,
+    "F5": 5,
+    "F6": 5,
+    "F7": 25,
+    "F8": 25,
+    "F9": 0,
+    "F10": 0,
+    "F11": 0,
+    "F12": 0,
+    "F13": 0,
+    "F14": 0,
+    "F15": 0,
+    "F16": 0,
+    "F17": 0,
+    "F18": 0,
+    "F19": 0,
+    "F20": 0,
+    "F21": 0,
+    "F22": 0,
+    "F23": 0,
+    "F24": 0,
+    "F25": 0,
+    "F26": 0,
+    "F27": 0,
+    "F28": 0,
+    "F29": 0,
+    "F30": 0,
+    "F31": 0
+  },
+  "memory": {},
+  "mispredictions": 0,
+  "memory_replays": 0,
+  "records": [
+    {
+      "tag": 1,
+      "pc": 0,
+      "ins": {
+        "text": "Add.d F3, F1, F2",
+        "op": "add.d",
+        "dest": "F3",
+        "sources": [
+          "F1",
+          "F2"
+        ],
+        "immediate": 0,
+        "kind": "fp_add"
+      },
+      "operands": [
+        [
+          null,
+          2
+        ],
+        [
+          null,
+          3
+        ]
+      ],
+      "issue": 1,
+      "ex": [
+        2,
+        4
+      ],
+      "mem": [],
+      "wb": 5,
+      "commit": 6,
+      "squashed": false,
+      "ready": true,
+      "result": 5,
+      "address": null,
+      "finish": 4,
+      "predicted": null
+    },
+    {
+      "tag": 2,
+      "pc": 1,
+      "ins": {
+        "text": "Add.d F4, F1, F2",
+        "op": "add.d",
+        "dest": "F4",
+        "sources": [
+          "F1",
+          "F2"
+        ],
+        "immediate": 0,
+        "kind": "fp_add"
+      },
+      "operands": [
+        [
+          null,
+          2
+        ],
+        [
+          null,
+          3
+        ]
+      ],
+      "issue": 2,
+      "ex": [
+        3,
+        5
+      ],
+      "mem": [],
+      "wb": 6,
+      "commit": 7,
+      "squashed": false,
+      "ready": true,
+      "result": 5,
+      "address": null,
+      "finish": 5,
+      "predicted": null
+    },
+    {
+      "tag": 3,
+      "pc": 2,
+      "ins": {
+        "text": "Add.d F5, F1, F2",
+        "op": "add.d",
+        "dest": "F5",
+        "sources": [
+          "F1",
+          "F2"
+        ],
+        "immediate": 0,
+        "kind": "fp_add"
+      },
+      "operands": [
+        [
+          null,
+          2
+        ],
+        [
+          null,
+          3
+        ]
+      ],
+      "issue": 3,
+      "ex": [
+        4,
+        6
+      ],
+      "mem": [],
+      "wb": 7,
+      "commit": 8,
+      "squashed": false,
+      "ready": true,
+      "result": 5,
+      "address": null,
+      "finish": 6,
+      "predicted": null
+    },
+    {
+      "tag": 4,
+      "pc": 3,
+      "ins": {
+        "text": "Add.d F6, F1, F2",
+        "op": "add.d",
+        "dest": "F6",
+        "sources": [
+          "F1",
+          "F2"
+        ],
+        "immediate": 0,
+        "kind": "fp_add"
+      },
+      "operands": [
+        [
+          null,
+          2
+        ],
+        [
+          null,
+          3
+        ]
+      ],
+      "issue": 4,
+      "ex": [
+        5,
+        7
+      ],
+      "mem": [],
+      "wb": 8,
+      "commit": 9,
+      "squashed": false,
+      "ready": true,
+      "result": 5,
+      "address": null,
+      "finish": 7,
+      "predicted": null
+    },
+    {
+      "tag": 5,
+      "pc": 4,
+      "ins": {
+        "text": "Mult.d F7, F3, F4",
+        "op": "mult.d",
+        "dest": "F7",
+        "sources": [
+          "F3",
+          "F4"
+        ],
+        "immediate": 0,
+        "kind": "fp_mul"
+      },
+      "operands": [
+        [
+          null,
+          5
+        ],
+        [
+          null,
+          5
+        ]
+      ],
+      "issue": 5,
+      "ex": [
+        6,
+        10
+      ],
+      "mem": [],
+      "wb": 11,
+      "commit": 12,
+      "squashed": false,
+      "ready": true,
+      "result": 25,
+      "address": null,
+      "finish": 10,
+      "predicted": null
+    },
+    {
+      "tag": 6,
+      "pc": 5,
+      "ins": {
+        "text": "Mult.d F8, F5, F6",
+        "op": "mult.d",
+        "dest": "F8",
+        "sources": [
+          "F5",
+          "F6"
+        ],
+        "immediate": 0,
+        "kind": "fp_mul"
+      },
+      "operands": [
+        [
+          null,
+          5
+        ],
+        [
+          null,
+          5
+        ]
+      ],
+      "issue": 6,
+      "ex": [
+        8,
+        12
+      ],
+      "mem": [],
+      "wb": 13,
+      "commit": 14,
+      "squashed": false,
+      "ready": true,
+      "result": 25,
+      "address": null,
+      "finish": 12,
+      "predicted": null
+    }
+  ]
+}

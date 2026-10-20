@@ -1,0 +1,4 @@
+48 test/width combinations PASS against sequential architectural reference.
+Stage ordering, issue/writeback/commit bandwidth, FU launch/occupancy, branch recovery gaps and retirement order assertions PASS.
+200 deterministic randomized dependency runs PASS against reference.
+CLI smoke check PASS; default width 1 and invalid-width rejection PASS.

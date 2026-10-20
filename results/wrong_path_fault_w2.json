@@ -1,0 +1,280 @@
+{
+  "cycles": 21,
+  "hardware": {
+    "rs": {
+      "integer": 8,
+      "fp_add": 3,
+      "fp_mul": 2,
+      "ls": 8
+    },
+    "latency": {
+      "integer": 8,
+      "fp_add": 4,
+      "fp_mul": 15,
+      "ls": 1
+    },
+    "units": {
+      "integer": 1,
+      "fp_add": 1,
+      "fp_mul": 1,
+      "ls": 1
+    },
+    "branch_offsets": "words",
+    "memory_cycles": 1,
+    "rob_entries": 64,
+    "issue_width": 2,
+    "writeback_width": 1,
+    "commit_width": 2
+  },
+  "registers": {
+    "R0": 0,
+    "R1": 9,
+    "R2": 0,
+    "R3": 0,
+    "R4": 0,
+    "R5": 0,
+    "R6": 0,
+    "R7": 0,
+    "R8": 0,
+    "R9": 0,
+    "R10": 0,
+    "R11": 0,
+    "R12": 0,
+    "R13": 0,
+    "R14": 0,
+    "R15": 0,
+    "R16": 0,
+    "R17": 0,
+    "R18": 0,
+    "R19": 0,
+    "R20": 0,
+    "R21": 0,
+    "R22": 0,
+    "R23": 0,
+    "R24": 0,
+    "R25": 0,
+    "R26": 0,
+    "R27": 0,
+    "R28": 0,
+    "R29": 0,
+    "R30": 0,
+    "R31": 0,
+    "F0": 0,
+    "F1": 0,
+    "F2": 0,
+    "F3": 0,
+    "F4": 0,
+    "F5": 0,
+    "F6": 0,
+    "F7": 0,
+    "F8": 0,
+    "F9": 0,
+    "F10": 0,
+    "F11": 0,
+    "F12": 0,
+    "F13": 0,
+    "F14": 0,
+    "F15": 0,
+    "F16": 0,
+    "F17": 0,
+    "F18": 0,
+    "F19": 0,
+    "F20": 0,
+    "F21": 0,
+    "F22": 0,
+    "F23": 0,
+    "F24": 0,
+    "F25": 0,
+    "F26": 0,
+    "F27": 0,
+    "F28": 0,
+    "F29": 0,
+    "F30": 0,
+    "F31": 0
+  },
+  "memory": {},
+  "mispredictions": 1,
+  "memory_replays": 0,
+  "records": [
+    {
+      "tag": 1,
+      "pc": 0,
+      "ins": {
+        "text": "Beq R0, R0, 2",
+        "op": "beq",
+        "dest": null,
+        "sources": [
+          "R0",
+          "R0"
+        ],
+        "immediate": 2,
+        "kind": "integer"
+      },
+      "operands": [
+        [
+          null,
+          0
+        ],
+        [
+          null,
+          0
+        ]
+      ],
+      "issue": 1,
+      "ex": [
+        2,
+        9
+      ],
+      "mem": [],
+      "wb": null,
+      "commit": 10,
+      "squashed": false,
+      "ready": true,
+      "result": null,
+      "address": null,
+      "finish": null,
+      "predicted": 1
+    },
+    {
+      "tag": 2,
+      "pc": 1,
+      "ins": {
+        "text": "Ld F1, 300(R0)",
+        "op": "ld",
+        "dest": "F1",
+        "sources": [
+          "R0"
+        ],
+        "immediate": 300,
+        "kind": "ls"
+      },
+      "operands": [
+        [
+          null,
+          0
+        ]
+      ],
+      "issue": 2,
+      "ex": [
+        3,
+        3
+      ],
+      "mem": [
+        4,
+        4
+      ],
+      "wb": 5,
+      "commit": null,
+      "squashed": true,
+      "ready": true,
+      "result": 0,
+      "address": 300,
+      "finish": 4,
+      "predicted": null
+    },
+    {
+      "tag": 3,
+      "pc": 2,
+      "ins": {
+        "text": "Sd F1, 304(R0)",
+        "op": "sd",
+        "dest": null,
+        "sources": [
+          "R0",
+          "F1"
+        ],
+        "immediate": 304,
+        "kind": "ls"
+      },
+      "operands": [
+        [
+          null,
+          0
+        ],
+        [
+          null,
+          0
+        ]
+      ],
+      "issue": 2,
+      "ex": [
+        4,
+        4
+      ],
+      "mem": [],
+      "wb": null,
+      "commit": null,
+      "squashed": true,
+      "ready": true,
+      "result": null,
+      "address": 304,
+      "finish": null,
+      "predicted": null
+    },
+    {
+      "tag": 4,
+      "pc": 3,
+      "ins": {
+        "text": "Addi R1, R0, 9",
+        "op": "addi",
+        "dest": "R1",
+        "sources": [
+          "R0"
+        ],
+        "immediate": 9,
+        "kind": "integer"
+      },
+      "operands": [
+        [
+          null,
+          0
+        ]
+      ],
+      "issue": 3,
+      "ex": [],
+      "mem": [],
+      "wb": null,
+      "commit": null,
+      "squashed": true,
+      "ready": false,
+      "result": null,
+      "address": null,
+      "finish": null,
+      "predicted": null
+    },
+    {
+      "tag": 5,
+      "pc": 3,
+      "ins": {
+        "text": "Addi R1, R0, 9",
+        "op": "addi",
+        "dest": "R1",
+        "sources": [
+          "R0"
+        ],
+        "immediate": 9,
+        "kind": "integer"
+      },
+      "operands": [
+        [
+          null,
+          0
+        ]
+      ],
+      "issue": 11,
+      "ex": [
+        12,
+        19
+      ],
+      "mem": [],
+      "wb": 20,
+      "commit": 21,
+      "squashed": false,
+      "ready": true,
+      "result": 9,
+      "address": null,
+      "finish": 19,
+      "predicted": null
+    }
+  ]
+}
